@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="lab11.LoginControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:lab11"
+             mc:Ignorable="d" Height="315.989" Width="498.269">
+    <Grid HorizontalAlignment="Left" Height="238" Margin="13,14,0,0" VerticalAlignment="Top" Width="300">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="37*"/>
+            <ColumnDefinition Width="63*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="UserName" HorizontalAlignment="Left" Height="25" Margin="2.8,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Grid.Column="1"/>
+        <Label Content="Login: " HorizontalAlignment="Left" Margin="17,50,0,0" VerticalAlignment="Top" Height="26" Width="45"/>
+        <Label Content="Password: " HorizontalAlignment="Left" Margin="15,103,0,0" VerticalAlignment="Top" Height="26" Width="66" />
+        <PasswordBox x:Name="Password" HorizontalAlignment="Left" Margin="2.8,102,0,0" VerticalAlignment="Top" Width="180" Height="25" Grid.Column="1"/>
+        <Button Content="Log Out" Grid.Column="1" HorizontalAlignment="Left" Height="30" Margin="96.8,158,0,17" VerticalAlignment="Center" Width="80" Click="Button_Click_1"/>
+        <Button Content="Log in" HorizontalAlignment="Left" Height="30" Margin="3.8,158,0,17" VerticalAlignment="Center" Width="80" Click="Button_Click" Grid.Column="1"/>
+    </Grid>
+</UserControl>
